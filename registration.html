@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Form</title>
+<style>
+	body {
+	background-color: #A09D9D;
+	background-size: cover;
+	}
+	
+	.container {
+	padding: 19px;
+	border-radius: 5px;
+	background-color: #E8E8E8;
+	width: 60%;
+	margin: auto;
+	text-align: left;
+	}
+	
+	input[type=text], input[type=password], input[type=email], input[type=number] {
+	width: 97%;
+	padding: 15px;
+	margin: 5px 0 20px 0;
+	display: inline-block;
+	border: none;
+	background: white;
+	}
+	
+	input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus  {
+	background-color: #ddd;
+	outline: none;
+	}
+	
+	.submitbtn {
+	background-color:#B8000A;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+	font-size: 17px;
+	}
+
+	.resetbtn {
+	background-color: white;
+	color: red;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+	font-size: 17px;
+	}
+
+	.submitbtn:hover {
+	opacity: 1;
+	}
+
+	.resetbtn:hover {
+	opacity: 1;
+	}
+</style>
+</head>
+<body>
+<form>
+  <div class="container">
+	
+ 	<label for="fname"><label style="color: #B8000A; font-size:20px; font-family: Arial;"><b>First Name</b>
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+    
+	<label for="mname"><label style="color: #B8000A; font-size:20px; font-family: Arial;"><b>Middle Name</b>
+    <input type="text" placeholder="Enter Middle Name" name="mname" id="minitial" required>
+	
+    <label for="lname"><label style="color: #B8000A; font-size:20px; font-family: Arial;"><b>Family Name</b>
+    <input type="text" placeholder="Enter Family Name" name="lname" id="lname" required>
+	
+	<p style="color: #B8000A; font-size:20px; font-family: Arial;"><b>Gender</b></p>
+	<input type="radio" id="gender" name="Gender" value="Female">
+  	<label for="Female">Female</label>
+
+	<input type="radio" id="gender" name="Gender" value="Male">
+  	<label for="Male">Male</label>
+
+	<input type="radio" id="gender" name="Gender" value="Other">
+  	<label for="Other">Prefer not to say.</label><br><br>
+
+	<label for="email"><label style="color: #B8000A; font-size:20px; font-family: Arial;"><b>Email Address</b></label><br>
+    <input type="email" placeholder="Enter Email Address" name="email" id="email" required>
+	
+	<label for="address"><label style="color: #B8000A; font-size:20px; font-family: Arial;"><b>Home Address<b></label><br>
+	<textarea id="address" name="address" rows="4" cols="121">Enter Home Address</textarea>
+	
+	<p style="color: #B8000A; font-size:20px; font-family: Arial;"><b>Hobbies</b></p>
+	<input type="checkbox" id="hobbie1" name="hobbie1" value="Computer Games">
+	<label for="hobbie1"><label style="color: #B8000A; font-size:20px; font-family: Arial;"> Computer Games</label><br>
+	
+	<input type="checkbox" id="hobbie2" name="hobbie2" value="Playing Music Instruments">
+	<label for="hobbie2"><label style="color: #B8000A; font-size:20px; font-family: Arial;"> Playing Music Instruments</label><br>
+	
+	<input type="checkbox" id="hobbie3" name="hobbie3" value="Cooking">
+	<label for="hobbie3"><label style="color: #B8000A; font-size:20px; font-family: Arial;"> Cooking</label><br>
+	
+	<input type="checkbox" id="hobbie4" name="hobbie4" value="Drawing">
+	<label for="hobbie4"><label style="color: #B8000A; font-size:20px; font-family: Arial;"> Drawing</label><br><br>
+	
+	<label for="color">Favorite Color</label>
+	<select name="color" id="color">
+    <option value="red">Red</option>
+    <option value="black">Black</option>
+    <option value="yellow">Yellow</option>
+    <option value="blue">Blue</option>
+	<option value="violet">Violet</option>
+    <option value="orange">Orange</option>
+    <option value="pink">Pink</option>
+	<option value="green">Green</option>
+    <option value="gray">Gray</option>
+    <option value="other">Other</option>
+	</select><br><br>
+	
+	<label for="self"><label style="color: #B8000A; font-size:20px; font-family: Arial;"><b>About Yourself<b></label><br>
+	<textarea id="sself" name="self" rows="4" cols="121">Say something about yourself.</textarea>
+	
+    <button type="submit" class="submitbtn"><b>Submit</b></button>
+    <button type="reset" class="resetbtn"><b>Clear all fields</b></button>
+ 
+</form>
+</div>
+</body>
+</html>
